@@ -1,7 +1,7 @@
-const t1 = gsap.timeline({ defaults: { ease: 'power.out' } });
-console.log(t1);
+const tl = gsap.timeline({ defaults: { ease: 'power.out' } });
 
-t1.to('.text', { y: '0%', duration: 1, stagger: 0.25 });
+tl.to('.text', { y: '0%', duration: 1, stagger: 0.25 });
+tl.fromTo('header', { opacity: 0 }, { opacity: 1, duration: 1 });
 
 //Magnetic Buton
 const magnetic__button = document.querySelectorAll('.magnetic');
