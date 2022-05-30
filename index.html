@@ -10,15 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-body text-white font-poppins">
-<header class=" py-6">
+<body class=" text-white font-poppins">
+<header class=" py-6 absolute  top-0 w-full">
     <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <div class="logo"><a href="" class="text-lg font-bold">Sowrov</a></div>
         <div class="hidden md:flex space-x-12 items-center">
             <a href="" class="">Home</a>
             <a href="" class="">About</a>
             <a href="" class="">Work</a>
-            <a href="javascript:void(0)" class="py-3 px-12 font-bold rounded bg-theme">Let's talk</a>
+            <a href="javascript:void(0)" class="py-3 px-12 font-bold rounded bg-theme ">Let's talk</a>
         </div>
         <div class="md:hidden">
             <svg viewBox="0 0 100 80" width="40" height="30" fill = 'white'>
@@ -31,7 +31,7 @@
 </header>
 
 <!-- Hero Section Start -->
-    <section class="hero h-screen flex items-center">
+    <section class="hero h-screen flex items-center bg-body ">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="">
                 <div class="sm:text-center lg:text-left intro">
@@ -43,7 +43,7 @@
                   <p class="mt-3 text-base  sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"><span class="text">Helping design your business and personal website build with your demand.</span></p>
                   <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div class="magnetic transition-all">
-                      <a href="#" class="w-full flex items-center justify-center py-3 px-12 bg-theme border border-transparent font-bold rounded"> Download CV </a>
+                      <a href="#" class="custom__btn w-full flex items-center justify-center py-3 px-12 bg-theme border border-transparent font-bold rounded"> <span class="text">Download CV</span> </a>
                     </div>
                   </div>
                 </div>
@@ -52,7 +52,46 @@
     </section>
 <!-- Hero Section End -->
 
+<!-- Work Section Start -->
+    <section class="py-20">
+      <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <h2 class="animate-text text-black pb-10 text-3xl font-bold">Latest works</h2>
+      </div>
+      
+      <div class="container grid grid-cols-1 place-items-center items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+       
+            <div class="project relative z-10 w-full  md:w-3/4 lg:w-3/4 my-10 shadow-2xl rounded">
+              <img class=" h-96 w-full rounded" src="https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825__480.jpg" alt="">
+              <div class="project__overlay rounded absolute top-0 left-0 h-full w-full bg-black bg-opacity-60 z-20 hover:bg-opacity-20  transition-opacity">
+                <h1 class="text-9xl text-secondary font-extrabold md:-ml-8 mt-2">01</h1>
+                  <div class=" w-1/2 bottom-16 left-16 absolute">
+                    <h2 class="text-2xl">Point genie landing page</h2>
+                    <p class="mt-2">Company Landing Page</p>
+                    <div class="inline-block mt-3">
+                      <a href="#" class="custom__btn w-full flex items-center justify-center py-3 px-12 bg-theme border border-transparent font-bold rounded"> <span class="text tracking-wide">Preview</span> </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="project relative z-10 w-full  md:w-3/4 lg:w-3/4 my-10">
+              <img class=" h-96 w-full " src="https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825__480.jpg" alt="">
+              <div class="project__overlay absolute top-0 left-0 h-full w-full bg-black bg-opacity-60 z-20 hover:bg-opacity-20  transition-opacity">
+                <h1 class="text-9xl text-secondary font-extrabold md:-ml-8 mt-2">02</h1>
+                  <div class=" w-1/2 bottom-16 left-16 absolute">
+                    <h2 class="text-2xl">Education landing page</h2>
+                    <p class="mt-2">Company Landing Page</p>
+                    <div class="inline-block mt-3">
+                      <a href="#" class="custom__btn w-full flex items-center justify-center py-3 px-12 bg-theme border border-transparent font-bold rounded"> <span class="text tracking-wide">Preview</span> </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </section>
+<!-- Work Section End -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 <script src="./src/js/script.js"></script>
 </body>
 </html>

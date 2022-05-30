@@ -35,3 +35,44 @@
     display: inline-block;
 }
 
+.custom__btn{
+    overflow: hidden;
+}
+
+.custom__btn span{
+    transform: translateY(150%);
+    display: inline-block;
+}
+
+.animate-text{
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .5s;
+    transition-delay: .5s;
+}
+
+.animate-text.active{
+    transform: scaleX(1);
+    transition-delay: 0;
+}
+
+.animate-text::before{
+    position: absolute;
+    content: '';
+    transform-origin: right;
+    background-color: #4700D8;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition:  .5s;
+    transition-delay: 0;
+}
+
+.animate-text.active::before{
+    transform: scale(0);
+    transition-delay: 1s;
+}
+
+

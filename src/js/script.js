@@ -2,7 +2,29 @@ const tl = gsap.timeline({ defaults: { ease: 'power.out' } });
 
 tl.to('.text', { y: '0%', duration: 1, stagger: 0.25 });
 tl.fromTo('header', { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo('.project', { opacity: 0 }, { opacity: 1, duration: 1 });
 
+// Reveal Animation
+
+const reveal = gsap.utils.toArray('.animate-text');
+reveal.forEach((text, i) => {
+  ScrollTrigger.create({
+    trigger: text,
+    toggleClass: 'active',
+    start: 'top 90%',
+    end: 'top 15%',
+    // markers: true,
+  });
+});
+
+// let projects = gsap.utils.toArray('.project');
+// projects.forEach((project) => {
+//   ScrollTrigger.create({
+//     start: 'top 20%',
+//     end: 'top 70%',
+//     markers: true,
+//   });
+// });
 //Magnetic Buton
 const magnetic__button = document.querySelectorAll('.magnetic');
 magnetic__button.forEach((mag) => {

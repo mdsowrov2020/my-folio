@@ -502,9 +502,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-3 {
@@ -519,12 +556,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.-ml-8 {
+  margin-left: -2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -535,12 +584,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -573,14 +642,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
+.bg-theme {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 0 191 / var(--tw-bg-opacity));
+}
+
 .bg-body {
   --tw-bg-opacity: 1;
   background-color: rgb(71 0 216 / var(--tw-bg-opacity));
 }
 
-.bg-theme {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 0 191 / var(--tw-bg-opacity));
+  background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .py-6 {
@@ -603,6 +681,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .font-poppins {
   font-family: 'poppins', sans-serif;
 }
@@ -622,6 +709,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -638,13 +740,47 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: -0.025em;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(246 243 243 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(72 72 72 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(255 133 179 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -680,6 +816,50 @@ Ensure the default browser behavior of the `hidden` attribute.
 .intro p span{
   transform: translateY(100%);
   display: inline-block;
+}
+
+.custom__btn{
+  overflow: hidden;
+}
+
+.custom__btn span{
+  transform: translateY(150%);
+  display: inline-block;
+}
+
+.animate-text{
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+
+.animate-text.active{
+  transform: scaleX(1);
+  transition-delay: 0;
+}
+
+.animate-text::before{
+  position: absolute;
+  content: '';
+  transform-origin: right;
+  background-color: #4700D8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition:  .5s;
+  transition-delay: 0;
+}
+
+.animate-text.active::before{
+  transform: scale(0);
+  transition-delay: 1s;
+}
+
+.hover\:bg-opacity-20:hover {
+  --tw-bg-opacity: 0.2;
 }
 
 @media (min-width: 640px) {
@@ -728,12 +908,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 1.25rem;
   }
 
+  .md\:-ml-8 {
+    margin-left: -2rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:px-14 {
@@ -763,6 +951,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -776,4 +968,5 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: left;
   }
 }
+
 
