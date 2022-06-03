@@ -12,6 +12,7 @@ tl.fromTo('header', { opacity: 0 }, { opacity: 1, duration: 1 });
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
+  multiplier: 2,
 });
 // Reveal Animation
 

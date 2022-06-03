@@ -6,9 +6,7 @@
     -webkit-clip-path: circle(80.8% at 48% 1%);
     clip-path: circle(80.8% at 48% 1%);
 } */
-header {
-    border-bottom: 1px solid #fafafa56;
-}
+
 .intro h1{
     overflow: hidden;
 }

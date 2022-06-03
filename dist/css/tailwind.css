@@ -673,9 +673,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.6;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-8 {
@@ -701,11 +701,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-20 {
@@ -805,10 +800,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     -webkit-clip-path: circle(80.8% at 48% 1%);
     clip-path: circle(80.8% at 48% 1%);
 } */
-
-header {
-  border-bottom: 1px solid #fafafa56;
-}
 
 .intro h1{
   overflow: hidden;
