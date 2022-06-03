@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -638,21 +642,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   scroll-behavior: smooth;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
-.border {
-  border-width: 1px;
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border-transparent {
   border-color: transparent;
 }
 
-.bg-theme {
+.bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 0 191 / var(--tw-bg-opacity));
+  background-color: rgb(255 133 179 / var(--tw-bg-opacity));
 }
 
 .bg-body {
@@ -663,6 +667,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(72 72 72 / var(--tw-bg-opacity));
+}
+
+.bg-theme {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 0 191 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -689,9 +698,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -727,9 +736,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-5xl {
@@ -747,6 +756,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .tracking-tight {
@@ -799,9 +812,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 /* .hero{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    -webkit-clip-path: circle(80.8% at 48% 1%);
+    clip-path: circle(80.8% at 48% 1%);
 } */
 
 .intro h1{

@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 /* .hero{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    -webkit-clip-path: circle(80.8% at 48% 1%);
+    clip-path: circle(80.8% at 48% 1%);
 } */
 
 .intro h1{
