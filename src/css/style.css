@@ -6,7 +6,9 @@
     -webkit-clip-path: circle(80.8% at 48% 1%);
     clip-path: circle(80.8% at 48% 1%);
 } */
-
+header {
+    border-bottom: 1px solid #fafafa56;
+}
 .intro h1{
     overflow: hidden;
 }
@@ -48,7 +50,7 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: all .5s;
-    transition-delay: .5s;
+    transition-delay: .6s;
 }
 
 .animate-text.active{
@@ -66,7 +68,7 @@
     top: 0;
     left: 0;
     transition:  .5s;
-    transition-delay: 0;
+    transition-delay: .5s;
 }
 
 .animate-text.active::before{
